@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "target": "ES2022" /* Specify ECMAScript target version */,
+    "module": "NodeNext" /* Specify module code generation */,
+    // "moduleResolution": "bundler" /* Validate format matches host environment */,
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ] /* Specify library files to be included */,
+
+    /* Strictness */
+    "strict": true /* Enable all strict type-checking options */,
+    "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type */,
+    "strictNullChecks": true /* Enable strict null checks */,
+
+    /* Project Layout */
+    "rootDir": "./" /* Specify the root directory of input files */,
+    "outDir": "./dist" /* Redirect output structure to the directory */,
+    "removeComments": true /* Do not emit comments to output */,
+    "noEmit": false /* Do not emit outputs (set to true if only using TS for type-checking) */,
+
+    /* Advanced Options */
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules */,
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file */,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node"] /* Skip type checking of declaration files */
+  },
+  "include": [
+    "src/**/*",
+    "lib/**/*"
+  ] /* Specifiy files to include in compilation */,
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ] /* Specify files to exclude from compilation */
+}
